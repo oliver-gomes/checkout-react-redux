@@ -5,6 +5,8 @@ import PickupSavings from "./components/PickupSavings";
 import TaxesFees from "./components/TaxesFees";
 import EstimatedTotal from "./components/EstimatedTotal";
 import "./App.css";
+import ItemDetails from "./components/ItemDetails";
+import PromoCode from "./PromoCode";
 
 class App extends Component {
   state = {
@@ -22,6 +24,8 @@ class App extends Component {
           <TaxesFees taxes={this.state.taxes.toFixed(2)} />
           <hr />
           <EstimatedTotal price={this.state.estimatedTotal.toFixed(2)} />
+          <ItemDetails price={this.state.estimatedTotal.toFixed(2)} />
+          <PromoCode />
         </div>
       </div>
     );
